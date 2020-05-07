@@ -1,6 +1,6 @@
 # py-actions/py-dependency-install GitHub Action
 
-This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with optional `pip`, `setuptools`, and `wheel` installs/updates during execution.
+This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with optional `pip`, `setuptools`, and `wheel` installs/updates during execution.  A Python package environment report is displayed at the end of Action execution.
 
 ## Inputs
 
