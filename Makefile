@@ -7,4 +7,4 @@ update:
 dev-update:
 	npm update --dev
 
-.PHONY: dev-update update
+.PHONY: dev-update dist update
