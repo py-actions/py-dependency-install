@@ -1,0 +1,14 @@
+name: "Python Dependency Installation"
+description: "Install Python dependencies from requirements.txt file"
+inputs:
+  path: # id
+    description: "Path to requirements.txt file"
+    required: false
+    default: "requirements.txt"
+runs:
+  using: "node12"
+  main: "dist/index.js"
+
+branding:
+  icon: "terminal"
+  color: "blue"
