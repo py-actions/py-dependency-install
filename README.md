@@ -6,7 +6,7 @@ This GitHub Action installs Python package dependencies from a user-defined `req
 
 ### `path`
 
-**Optional** The `requirements.txt` file path relative to the root of your source repository. Default = `"requirements.txt`.
+**Optional** The `requirements.txt` file path relative to the root of your source repository. Default = `"requirements.txt"`.
 
 ### `update-pip`
 
