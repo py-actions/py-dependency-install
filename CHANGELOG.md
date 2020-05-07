@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.3
+
+Auto-updated during Action execution when you use the `v1` action tag
+
+- Add `name` field in the Action documentation
+
 ## v1.0.2
 
 Auto-updated during Action execution when you use the `v1` action tag
