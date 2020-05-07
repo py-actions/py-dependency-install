@@ -5,6 +5,10 @@ inputs:
     description: "Path to requirements.txt file"
     required: false
     default: "requirements.txt"
+  update-pip: # id
+    description: "Boolean for pip upgrade prior to the dependency installation (default=true)"
+    required: false
+    default: "true" # options "true", "false"
 runs:
   using: "node12"
   main: "dist/index.js"
