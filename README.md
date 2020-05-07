@@ -31,25 +31,28 @@ None
 Uses path `requirements.txt` and updates `pip` before the install.
 
 ```yaml
-uses: py-actions/py-dependency-install@v1
+- name: Install Python dependencies
+  uses: py-actions/py-dependency-install@v1
 ```
 
 ### Disable `pip` update before install
 
 ```yaml
-uses: py-actions/py-dependency-install@v1
-with:
-  update-pip: "false"
+- name: Install Python dependencies
+  uses: py-actions/py-dependency-install@v1
+  with:
+    update-pip: "false"
 ```
 
 ### Configure `setuptools` and `wheel` installs/updates
 
 ```yaml
-uses: py-actions/py-dependency-install@v1
-with:
-  update-pip: "true"
-  update-setuptools: "true"
-  update-wheel: "true"
+- name: Install Python dependencies
+  uses: py-actions/py-dependency-install@v1
+  with:
+    update-pip: "true"
+    update-setuptools: "true"
+    update-wheel: "true"
 ```
 
 ## License
