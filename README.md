@@ -1,6 +1,6 @@
 # py-actions/py-dependency-install GitHub Action
 
-This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with optional `pip`, `setuptools`, and `wheel` installs/updates during execution.  A Python package environment report is displayed at the end of Action execution.
+This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with `pip`, `setuptools`, and `wheel` installs/updates during execution.  A Python package environment report is displayed at the end of Action execution.
 
 ## Inputs
 
@@ -14,11 +14,11 @@ This GitHub Action installs Python package dependencies from a user-defined `req
 
 ### `update-setuptools`
 
-**Optional** A boolean string indicating that a `setuptools` package update should occur before the dependency installation. Options: [`"true"`, `"false"`].  Default=`"false"`
+**Optional** A boolean string indicating that a `setuptools` package update should occur before the dependency installation. Options: [`"true"`, `"false"`].  Default=`"true"`
 
 ### `update-wheel`
 
-**Optional** A boolean string indicating that a `wheel` package update should occur before the dependency installation. Options: [`"true"`, `"false"`].  Default=`"false"`
+**Optional** A boolean string indicating that a `wheel` package update should occur before the dependency installation. Options: [`"true"`, `"false"`].  Default=`"true"`
 
 ## Outputs
 
@@ -32,27 +32,27 @@ Uses path `requirements.txt` and updates `pip` before the install.
 
 ```yaml
 - name: Install Python dependencies
-  uses: py-actions/py-dependency-install@v1
+  uses: py-actions/py-dependency-install@v2
 ```
 
 ### Disable `pip` update before install
 
 ```yaml
 - name: Install Python dependencies
-  uses: py-actions/py-dependency-install@v1
+  uses: py-actions/py-dependency-install@v2
   with:
     update-pip: "false"
 ```
 
-### Configure `setuptools` and `wheel` installs/updates
+### Toggle `pip`, `setuptools`, and `wheel` installs/updates off
 
 ```yaml
 - name: Install Python dependencies
-  uses: py-actions/py-dependency-install@v1
+  uses: py-actions/py-dependency-install@v2
   with:
-    update-pip: "true"
-    update-setuptools: "true"
-    update-wheel: "true"
+    update-pip: "false"
+    update-setuptools: "false"
+    update-wheel: "false"
 ```
 
 ## License
