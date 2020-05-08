@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.1
+
+- expand documentation with examples of non-default `requirements.txt` file paths and optional install toggle definitions in the Action configuration
+
 ## v2.0.0
 
 - install/upgrade wheel by default (with option to toggle off)
