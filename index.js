@@ -11,20 +11,20 @@ async function run() {
   // Install dependencies
   // ====================
   try {
-    // update pip
-    if (updatePip === "true") {
-      console.log("[*] Updating pip package...");
-      await exec.exec("python -m pip install --upgrade pip");
+    // update wheel
+    if (updateWheel === "true") {
+      console.log("[*] Updating wheel package...");
+      await exec.exec("python -m pip install --upgrade wheel");
     }
     // update setuptools
     if (updateSetuptools === "true") {
       console.log("[*] Updating setuptools package...");
       await exec.exec("python -m pip install --upgrade setuptools");
     }
-    // update wheel
-    if (updateWheel === "true") {
-      console.log("[*] Updating wheel package...");
-      await exec.exec("python -m pip install --upgrade wheel");
+    // update pip
+    if (updatePip === "true") {
+      console.log("[*] Updating pip package...");
+      await exec.exec("python -m pip install --upgrade pip");
     }
 
     // install Python dependency definitions in user-defined requirements.txt file path
