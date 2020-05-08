@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.0
+
+- install/upgrade wheel by default (with option to toggle off)
+- install/upgrade setuptools by default (with option to toggle off)
+- refactor order of wheel install relative to other packages so that wheels can be built of all packages, including pip/setuptools
+
 ## v1.0.3
 
 Auto-updated during Action execution when you use the `v1` action tag
