@@ -12,11 +12,11 @@ inputs:
   update-setuptools:
     description: "Boolean for setuptools install/upgrade prior to the dependency installation (default=false)"
     required: false
-    default: "false" # options "true", "false"
+    default: "true" # options "true", "false"
   update-wheel:
     description: "Boolean for wheel install/upgrade prior to the dependency installation (default=false)"
     required: false
-    default: "false" # options "true", "false"
+    default: "true" # options "true", "false"
 
 runs:
   using: "node12"
