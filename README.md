@@ -1,5 +1,10 @@
 # py-actions/py-dependency-install GitHub Action
 
+[![Linux CI](https://github.com/py-actions/py-dependency-install/workflows/Linux%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22Linux+CI%22)
+[![macOS CI](https://github.com/py-actions/py-dependency-install/workflows/macOS%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22macOS+CI%22)
+[![Windows CI](https://github.com/py-actions/py-dependency-install/workflows/Windows%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22Windows+CI%22)
+[![Lint](https://github.com/py-actions/py-dependency-install/workflows/Lint/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3ALint)
+
 This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with `pip`, `setuptools`, and `wheel` installs/updates during execution.  A Python package environment report is displayed at the end of Action execution.
 
 ## Inputs
