@@ -6,15 +6,15 @@ inputs:
     required: false
     default: "requirements.txt"
   update-pip: # id
-    description: "Boolean for pip upgrade prior to the dependency installation (default=true)"
+    description: "Boolean for pip upgrade prior to the dependency installation (default='true')"
     required: false
     default: "true" # options "true", "false"
   update-setuptools:
-    description: "Boolean for setuptools install/upgrade prior to the dependency installation (default=false)"
+    description: "Boolean for setuptools install/upgrade prior to the dependency installation (default='true')"
     required: false
     default: "true" # options "true", "false"
   update-wheel:
-    description: "Boolean for wheel install/upgrade prior to the dependency installation (default=false)"
+    description: "Boolean for wheel install/upgrade prior to the dependency installation (default='true')"
     required: false
     default: "true" # options "true", "false"
 
