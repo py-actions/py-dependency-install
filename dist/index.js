@@ -34,7 +34,7 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(104);
+/******/ 		return __webpack_require__(676);
 /******/ 	};
 /******/
 /******/ 	// run startup
@@ -954,56 +954,6 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 104:
-/***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
-
-const core = __webpack_require__(470);
-const exec = __webpack_require__(986);
-
-async function run() {
-  const requirementsPath = core.getInput("path");
-  const updatePip = core.getInput("update-pip");
-  const updateSetuptools = core.getInput("update-setuptools");
-  const updateWheel = core.getInput("update-wheel");
-
-  // ====================
-  // Install dependencies
-  // ====================
-  try {
-    // update wheel
-    if (updateWheel === "true") {
-      console.log("[*] Updating wheel package...");
-      await exec.exec("python -m pip install --upgrade wheel");
-    }
-    // update setuptools
-    if (updateSetuptools === "true") {
-      console.log("[*] Updating setuptools package...");
-      await exec.exec("python -m pip install --upgrade setuptools");
-    }
-    // update pip
-    if (updatePip === "true") {
-      console.log("[*] Updating pip package...");
-      await exec.exec("python -m pip install --upgrade pip");
-    }
-
-    // install Python dependency definitions in user-defined requirements.txt file path
-    console.log("[*] Installing Python dependencies...");
-    await exec.exec(`python -m pip install -r ${requirementsPath}`);
-    console.log("");
-    console.log("[*] The environment contains the following Python packages:");
-    await exec.exec("python -m pip list");
-  } catch (error) {
-    core.setFailed(
-      `ERROR: Action failed during dependency installation attempt with error: ${error.message}`
-    );
-  }
-}
-
-run();
-
-
-/***/ }),
-
 /***/ 129:
 /***/ (function(module) {
 
@@ -1566,6 +1516,56 @@ function isUnixExecutable(stats) {
         ((stats.mode & 64) > 0 && stats.uid === process.getuid()));
 }
 //# sourceMappingURL=io-util.js.map
+
+/***/ }),
+
+/***/ 676:
+/***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
+
+const core = __webpack_require__(470);
+const exec = __webpack_require__(986);
+
+async function run() {
+  const requirementsPath = core.getInput("path");
+  const updatePip = core.getInput("update-pip");
+  const updateSetuptools = core.getInput("update-setuptools");
+  const updateWheel = core.getInput("update-wheel");
+
+  // ====================
+  // Install dependencies
+  // ====================
+  try {
+    // update wheel
+    if (updateWheel === "true") {
+      console.log("[*] Updating wheel package...");
+      await exec.exec("python -m pip install --upgrade wheel");
+    }
+    // update setuptools
+    if (updateSetuptools === "true") {
+      console.log("[*] Updating setuptools package...");
+      await exec.exec("python -m pip install --upgrade setuptools");
+    }
+    // update pip
+    if (updatePip === "true") {
+      console.log("[*] Updating pip package...");
+      await exec.exec("python -m pip install --upgrade pip");
+    }
+
+    // install Python dependency definitions in user-defined requirements.txt file path
+    console.log("[*] Installing Python dependencies...");
+    await exec.exec(`python -m pip install -r ${requirementsPath}`);
+    console.log("");
+    console.log("[*] The environment contains the following Python packages:");
+    await exec.exec("python -m pip list");
+  } catch (error) {
+    core.setFailed(
+      `ERROR: Action failed during dependency installation attempt with error: ${error.message}`
+    );
+  }
+}
+
+run();
+
 
 /***/ }),
 
