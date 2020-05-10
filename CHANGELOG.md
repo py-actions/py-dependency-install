@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.0.2
+
+- add Quick Start section at the front of the docs
+- expand documentation examples
+- fix documentation of defaults in Action yaml file
+- add cross-platform CI testing
+
 ## v2.0.1
 
 - expand documentation with examples of non-default `requirements.txt` file paths and optional install toggle definitions in the Action configuration
