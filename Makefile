@@ -1,4 +1,4 @@
-dist: *.js package*.json
+dist: src/*.js package*.json
 	npm run package
 
 update:
@@ -7,4 +7,7 @@ update:
 dev-update:
 	npm update --dev
 
-.PHONY: dev-update dist update
+lint:
+	npm run lint
+
+.PHONY: dev-update dist lint update
