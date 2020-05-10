@@ -1,13 +1,13 @@
 {
   "name": "py-dependency-install",
-  "version": "1.0.0",
+  "version": "2.0.2",
   "description": "py-actions Python Dependency Installation Action",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint index.js",
-    "lint:fix": "eslint index.js --fix",
-    "package": "ncc build index.js -o dist",
-    "test": "eslint index.js && jest"
+    "lint": "eslint src/*.js",
+    "lint:fix": "eslint src/*.js --fix",
+    "package": "ncc build src/index.js -o dist",
+    "test": "eslint src/*.js && jest"
   },
   "repository": {
     "type": "git",
