@@ -1,5 +1,6 @@
 # py-actions/py-dependency-install GitHub Action
 
+![Version](https://img.shields.io/github/v/release/py-actions/py-dependency-install?sort=semver)
 [![Linux CI](https://github.com/py-actions/py-dependency-install/workflows/Linux%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22Linux+CI%22)
 [![macOS CI](https://github.com/py-actions/py-dependency-install/workflows/macOS%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22macOS+CI%22)
 [![Windows CI](https://github.com/py-actions/py-dependency-install/workflows/Windows%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22Windows+CI%22)
