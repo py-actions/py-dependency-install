@@ -30,7 +30,7 @@
   "homepage": "https://github.com/py-actions/py-dependency-install",
   "dependencies": {
     "@actions/core": "^1.4.0",
-    "@actions/exec": "^1.0.4"
+    "@actions/exec": "^1.1.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.3",
