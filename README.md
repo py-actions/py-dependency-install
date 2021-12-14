@@ -22,7 +22,7 @@ Uses path `requirements.txt` and updates `pip`, `setuptools`, and `wheel` before
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v2
+    uses: py-actions/py-dependency-install@v3
 ```
 
 ### Define the `requirements.txt` path
@@ -33,7 +33,7 @@ Define a requirements.txt file on a path relative to the root of your repository
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v2
+    uses: py-actions/py-dependency-install@v3
     with:
       path: "path/to/requirements.txt"
 ```
@@ -46,7 +46,7 @@ The `pip`, `setuptools`, and `wheel` install/updates can be toggled off in your 
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v2
+    uses: py-actions/py-dependency-install@v3
     with:
       update-pip: "false"
       update-setuptools: "false"
