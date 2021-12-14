@@ -8,6 +8,8 @@
 
 This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with `pip`, `setuptools`, and `wheel` installs/updates during execution.  A Python package environment report is displayed at the end of Action execution.
 
+This Action is tested nightly with cPython v3.7.x - v3.10.x in the latest Linux, macOS, and Windows GitHub Actions runner environments.
+
 ## Quick Start
 
 Insert a dependency installation step under the `steps:` field in a GitHub workflow job with a configuration like this:
@@ -20,7 +22,7 @@ Uses path `requirements.txt` and updates `pip`, `setuptools`, and `wheel` before
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v2
+    uses: py-actions/py-dependency-install@v3
 ```
 
 ### Define the `requirements.txt` path
@@ -31,7 +33,7 @@ Define a requirements.txt file on a path relative to the root of your repository
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v2
+    uses: py-actions/py-dependency-install@v3
     with:
       path: "path/to/requirements.txt"
 ```
@@ -44,7 +46,7 @@ The `pip`, `setuptools`, and `wheel` install/updates can be toggled off in your 
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v2
+    uses: py-actions/py-dependency-install@v3
     with:
       update-pip: "false"
       update-setuptools: "false"
