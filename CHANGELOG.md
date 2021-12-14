@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.0.0
+
+- add cPython 3.10.x interpreter support
+- drop cPython 3.6.x interpreter support
+- remove pypy3 interpreter CI tests (appears to be a bug in the actions/setup-python pypy3 install pipeline at the moment)
+- update eslint-plugin-import to ^2.25.3
+- update eslint-plugin-jsx-a11y to ^6.5.1
+- update eslint-plugin-prettier to ^3.4.1
+- update eslint-plugin-promise to ^4.3.1
+- update eslint-plugin-react to ^7.27.1
+- update jest to ^27.4.5
+
 ## v2.1.0
 
 - add cPython 3.9 interpreter CI testing
@@ -7,7 +19,7 @@
 - update @actions/core dependency to v1.2.6
 - update @zeit/ncc dependency to v0.22.3
 - update eslint-config-airbnb-base dependency to v14.2.1
-- update estlint-plugin-import dependency to v2.22.1
+- update eslint-plugin-import dependency to v2.22.1
 - update eslint-plugin-jsx-a11y dependency to v6.4.1
 - update eslint-plugin-prettier dependency to v3.1.4
 - update eslint-plugin-react dependency to v7.21.5

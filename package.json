@@ -1,6 +1,6 @@
 {
   "name": "py-dependency-install",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "py-actions Python Dependency Installation Action",
   "main": "index.js",
   "scripts": {
