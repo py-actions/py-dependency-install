@@ -49,6 +49,6 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^27.4.5",
-    "prettier": "^1.19.1"
+    "prettier": "^2.5.1"
   }
 }
