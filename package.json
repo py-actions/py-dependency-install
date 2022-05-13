@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/py-actions/py-dependency-install",
   "dependencies": {
-    "@actions/core": "^1.8.0",
+    "@actions/core": "^1.8.2",
     "@actions/exec": "^1.1.1"
   },
   "devDependencies": {
