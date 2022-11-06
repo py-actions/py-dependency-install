@@ -5,10 +5,11 @@
 [![macOS CI](https://github.com/py-actions/py-dependency-install/workflows/macOS%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22macOS+CI%22)
 [![Windows CI](https://github.com/py-actions/py-dependency-install/workflows/Windows%20CI/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3A%22Windows+CI%22)
 [![Lint](https://github.com/py-actions/py-dependency-install/workflows/Lint/badge.svg)](https://github.com/py-actions/py-dependency-install/actions?query=workflow%3ALint)
+[![CodeQL](https://github.com/py-actions/py-dependency-install/actions/workflows/codeql.yml/badge.svg)](https://github.com/py-actions/py-dependency-install/actions/workflows/codeql.yml)
 
 This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with `pip`, `setuptools`, and `wheel` installs/updates during execution.  A Python package environment report is displayed at the end of Action execution.
 
-This Action is tested nightly with cPython v3.7.x - v3.10.x in the latest Linux, macOS, and Windows GitHub Actions runner environments.
+This Action is tested nightly with cPython v3.8.x - v3.11.x in the latest Linux, macOS, and Windows GitHub Actions runner environments.
 
 ## Quick Start
 
@@ -22,7 +23,7 @@ Uses path `requirements.txt` and updates `pip`, `setuptools`, and `wheel` before
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v3
+    uses: py-actions/py-dependency-install@v4
 ```
 
 ### Define the `requirements.txt` path
@@ -33,7 +34,7 @@ Define a requirements.txt file on a path relative to the root of your repository
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v3
+    uses: py-actions/py-dependency-install@v4
     with:
       path: "path/to/requirements.txt"
 ```
@@ -46,7 +47,7 @@ The `pip`, `setuptools`, and `wheel` install/updates can be toggled off in your 
 steps:
   # this Action should follow steps to set up Python build environment
   - name: Install Python dependencies
-    uses: py-actions/py-dependency-install@v3
+    uses: py-actions/py-dependency-install@v4
     with:
       update-pip: "false"
       update-setuptools: "false"
