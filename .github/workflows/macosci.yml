@@ -23,13 +23,13 @@ jobs:
       - name: Python environment report
         run: python -c "import sys; print(sys.version)"
       - name: Run ${{ matrix.python-version }} platform tests (default)
-        uses: py-actions/py-dependency-install@master
+        uses: py-actions/py-dependency-install@642387473628e92c4b9ac198b5ba51b9102d3f08
         with:
-          path: "tests/requirements.txt"
+          requirements-path: "tests/requirements.txt"
       - name: Run ${{ matrix.python-version }} platform tests (with args)
-        uses: py-actions/py-dependency-install@master
+        uses: py-actions/py-dependency-install@642387473628e92c4b9ac198b5ba51b9102d3f08
         with:
-          path: "tests/requirements.txt"
+          requirements-path: "tests/requirements.txt"
           update-pip: "false"
           update-setuptools: "false"
           update-wheel: "false"
