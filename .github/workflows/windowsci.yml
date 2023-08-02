@@ -16,16 +16,6 @@ jobs:
     steps:
       - name: Check out source repository
         uses: actions/checkout@v3
-      - name: Setup Environment (PR)
-        if: ${{ github.event_name == 'pull_request' }}
-        shell: bash
-        run: |
-          echo "LAST_COMMIT_SHA=${{ github.event.pull_request.head.sha }}" >> ${GITHUB_ENV}
-      - name: Setup Environment (Push)
-        if: ${{ github.event_name == 'push' }}
-        shell: bash
-        run: |
-          echo "LAST_COMMIT_SHA=${GITHUB_SHA}" >> ${GITHUB_ENV}
       - name: Set up Python ${{ matrix.python-version }} environment
         uses: actions/setup-python@v4
         with:
@@ -33,11 +23,11 @@ jobs:
       - name: Python environment report
         run: python -c "import sys; print(sys.version)"
       - name: Run ${{ matrix.python-version }} platform tests (default)
-        uses: py-actions/py-dependency-install@master
+        uses: py-actions/py-dependency-install@642387473628e92c4b9ac198b5ba51b9102d3f08
         with:
           requirements-path: "tests/requirements.txt"
       - name: Run ${{ matrix.python-version }} platform tests (with args)
-        uses: py-actions/py-dependency-install@master
+        uses: py-actions/py-dependency-install@642387473628e92c4b9ac198b5ba51b9102d3f08
         with:
           requirements-path: "tests/requirements.txt"
           update-pip: "false"
