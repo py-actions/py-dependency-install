@@ -1,15 +1,15 @@
 name: "Python Dependency Installation"
 description: "Install Python dependencies from requirements.txt file"
 inputs:
-  requirements-path: # id
+  requirements-path:
     description: "Path to requirements.txt file"
     required: false
-    default: "requirements.txt"
+    default: "requirements.txt" # on by default, path can be changed by user
   constraints-path:
     description: "Path to constraints.txt file"
     required: false
-    default: "none"
-  update-pip: # id
+    default: "none" # off by default, can be toggled on by user
+  update-pip:
     description: "Boolean for pip upgrade prior to the dependency installation (default='true')"
     required: false
     default: "true" # options "true", "false"
