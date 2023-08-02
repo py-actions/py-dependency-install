@@ -25,11 +25,11 @@ jobs:
       - name: Run ${{ matrix.python-version }} platform tests (default)
         uses: py-actions/py-dependency-install@master
         with:
-          path: "tests/requirements.txt"
+          requirements-path: "tests/requirements.txt"
       - name: Run ${{ matrix.python-version }} platform tests (with args)
         uses: py-actions/py-dependency-install@master
         with:
-          path: "tests/requirements.txt"
+          requirements-path: "tests/requirements.txt"
           update-pip: "false"
           update-setuptools: "false"
           update-wheel: "false"
