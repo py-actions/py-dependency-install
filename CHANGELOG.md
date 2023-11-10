@@ -1,10 +1,17 @@
 # Changelog
 
+## v4.1.0
+
+- update the GitHub Action to use node 20 environment from node 16 environment (addresses GitHub Actions node 16 deprecation warnings)
+- add cPython 3.12.x interpreter testing support
+- drop cPython 3.8.x interpreter testing support (may work, no longer tested)
+- development dependency updates
+
 ## v4.0.0
 
 - update the GitHub Action to use node 16 environment from node 12 environment (addresses GitHub Actions node 12 deprecation warnings)
-- add cPython 3.11.x interpreter support
-- drop cPython 3.7.x interpreter support (may work, no longer tested)
+- add cPython 3.11.x interpreter testing support
+- drop cPython 3.7.x interpreter testing support (may work, no longer tested)
 - update CodeQL configuration
 - dependency updates
 
