@@ -9,7 +9,7 @@
 
 This GitHub Action installs Python package dependencies from a user-defined `requirements.txt` file path with `pip`, `setuptools`, and `wheel` installs/updates during execution.  A Python package environment report is displayed at the end of Action execution.
 
-This Action is tested nightly with cPython v3.8.x - v3.11.x in the latest Linux, macOS, and Windows GitHub Actions runner environments.
+This Action is tested nightly with cPython v3.9.x - v3.12.x in the latest Linux, macOS, and Windows GitHub Actions runner environments.
 
 ## Quick Start
 
